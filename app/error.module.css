@@ -1,0 +1,6 @@
+.errorContainer {
+  color: red;
+  font-size: 18px;
+  padding: 20px;
+  border: 1px solid red;
+}

@@ -1,0 +1,17 @@
+.navigationContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.link {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.link.active {
+  font-weight: bold;
+  color: #0070f3;
+}
