@@ -1,8 +1,10 @@
 import { Book, BookList } from '@/types/books';
 import BookDetail from '@/components/books/BookDetail';
-import styles from './page.module.css';
+import styles from '@/styles/list.module.css';
 import Loading from '@/components/common/Loading';
 import { Suspense } from 'react';
+import Title from '@/components/common/Title';
+import Container from '@/components/layout/Container';
 
 async function getBookList(name: string) {
   const response = await fetch(
@@ -26,8 +28,9 @@ export default async function ListDetail({
   const bookList: BookList = await getBookList(id);
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>{bookList.display_name}</h1>
+    <Container>
+      <Title>{bookList.display_name}</Title>
+
       <Suspense fallback={<Loading />}>
         <div className={styles.booksGrid}>
           {bookList.books.map((book: Book) => (
@@ -35,6 +38,6 @@ export default async function ListDetail({
           ))}
         </div>
       </Suspense>
-    </div>
+    </Container>
   );
 }

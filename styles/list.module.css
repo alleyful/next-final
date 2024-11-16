@@ -1,18 +1,7 @@
-.container {
-  padding: 2rem 0;
-}
-
-.title {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
 .booksGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2rem;
-  padding: 0 1rem;
+  gap: 20px;
 }
 
 @media (max-width: 768px) {

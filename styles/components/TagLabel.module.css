@@ -1,0 +1,8 @@
+.label {
+  display: inline-flex;
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-size: 11px;
+  gap: 4px;
+  font-weight: 500;
+}

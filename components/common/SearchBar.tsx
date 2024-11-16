@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import styles from './SearchBar.module.css';
+import styles from '@/styles/components/SearchBar.module.css';
 
 interface SearchBarProps {
   onSearch: (query: string) => void;

@@ -1,11 +1,9 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
+
+import '@/styles/globals.css';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import { ThemeProvider } from '@/contexts/ThemeContext';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'NYT Bestsellers',
@@ -19,10 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body>
         <ThemeProvider>
           <Navigation />
-          <main className='container'>{children}</main>
+          <main className='main_container'>{children}</main>
           <Footer />
         </ThemeProvider>
       </body>

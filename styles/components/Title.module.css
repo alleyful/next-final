@@ -1,0 +1,12 @@
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  & span {
+    background: linear-gradient(to right, #ff41b7, #154aff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

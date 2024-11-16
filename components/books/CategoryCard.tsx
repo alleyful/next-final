@@ -1,9 +1,9 @@
 'use client';
+import Link from 'next/link';
 
 import { Category } from '@/types/books';
-import Link from 'next/link';
-import styles from './CategoryCard.module.css';
-import { motion } from 'framer-motion';
+import styles from '@/styles/components/CategoryCard.module.css';
+import TagLabel from '../common/TagLabel';
 
 interface CategoryCardProps {
   category: Category;
@@ -11,15 +11,16 @@ interface CategoryCardProps {
 
 export default function CategoryCard({ category }: CategoryCardProps) {
   return (
-    <motion.div
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.2 }}
-      className={styles.card}
-    >
+    <div className={styles.card}>
       <Link href={`/list/${category.list_name_encoded}`}>
+        <TagLabel label={category.updated} theme={category.updated} />
+
         <h2>{category.display_name}</h2>
-        <p>Updated: {category.updated}</p>
+
+        <p>
+          Updated: <span>{category.newest_published_date}</span>
+        </p>
       </Link>
-    </motion.div>
+    </div>
   );
 }
