@@ -10,7 +10,7 @@
 
 .section p {
   line-height: 1.6;
-  color: var(--foreground-rgb);
+  color: #f4f6fe;
 }
 
 .featureList {
@@ -58,7 +58,7 @@
 .techItem p {
   margin: 0;
   font-size: 0.9rem;
-  color: var(--foreground-rgb);
+  color: #f4f6fe;
 }
 
 @media (max-width: 768px) {
