@@ -1,0 +1,13 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: stretch;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.searchSection {
+  margin-bottom: 32px;
+  text-align: center;
+}

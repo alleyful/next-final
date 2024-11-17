@@ -10,7 +10,6 @@ export default function TagLabel({ label, theme }: TagLabelProps) {
     switch (theme) {
       case 'WEEKLY':
         return {
-          // backgroundColor: '#E7F0FF',
           borderColor: '#2E7DFF',
           color: '#2E7DFF',
           boxShadow: '0 0 2px 0 #2E7DFF'
@@ -18,23 +17,20 @@ export default function TagLabel({ label, theme }: TagLabelProps) {
 
       case 'MONTHLY':
         return {
-          // backgroundColor: '#E9F7F1',
-          borderColor: '#19a96f',
-          color: '#19a96f',
-          boxShadow: '0 0 2px 0 #19a96f'
+          borderColor: '#9f69f5',
+          color: '#9f69f5',
+          boxShadow: '0 0 2px 0 #9f69f5'
         };
 
       case 'YEARLY':
         return {
-          // backgroundColor: '#FDEEEE',
-          borderColor: '#F65555',
-          color: '#F65555',
-          boxShadow: '0 0 2px 0 #F65555'
+          borderColor: '#ff41b7',
+          color: '#ff41b7',
+          boxShadow: '0 0 2px 0 #ff41b7'
         };
 
       default:
         return {
-          // backgroundColor: '#FFF9E7',
           borderColor: '#FF9E00',
           color: '#FF9E00',
           boxShadow: '0 0 2px 0 #FF9E00'

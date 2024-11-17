@@ -13,6 +13,10 @@
   font-weight: bold;
   color: #efefef;
   margin: 0;
+  background: linear-gradient(to right, #ff41b7, #154aff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .notFound p {

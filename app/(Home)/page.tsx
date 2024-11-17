@@ -1,22 +1,29 @@
-import { getCategories } from '@/lib/api/books';
-import CategoryCard from '@/components/books/CategoryCard';
-import styles from '@/styles/home.module.css';
+import { Suspense } from 'react';
 import { Category } from '@/types/books';
-import Title from '@/components/common/Title';
 import Container from '@/components/layout/Container';
+import Loading from '@/components/common/Loading';
+import CategoryList from '@/components/books/CategoryList';
+import Title from '@/components/common/Title';
+
+async function getBookLists() {
+  const response = await fetch(
+    'https://books-api.nomadcoders.workers.dev/lists',
+    { next: { revalidate: 3600 } }
+  );
+  const json = await response.json();
+  return json.results;
+}
 
 export default async function Home() {
-  const categories = await getCategories();
+  const categories: Category[] = await getBookLists();
 
   return (
     <Container>
-      <Title>Categories</Title>
+      <Title>Best Seller Categories</Title>
 
-      <div className={styles.grid}>
-        {categories.map((category: Category) => (
-          <CategoryCard key={category.list_name_encoded} category={category} />
-        ))}
-      </div>
+      <Suspense fallback={<Loading />}>
+        <CategoryList categories={categories} />
+      </Suspense>
     </Container>
   );
 }

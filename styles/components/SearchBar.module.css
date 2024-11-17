@@ -7,14 +7,21 @@
 .searchInput {
   flex: 1;
   padding: 0.75rem 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid #1f273c;
   border-radius: 6px;
   font-size: 1rem;
+  background-color: #1f273c;
+  color: #fff;
+
+  &:focus {
+    outline: none;
+    border-color: #9f69f5;
+  }
 }
 
 .searchButton {
   padding: 0.75rem 1.5rem;
-  background: #2563eb;
+  background: #9f69f5;
   color: white;
   border: none;
   border-radius: 6px;
@@ -23,5 +30,5 @@
 }
 
 .searchButton:hover {
-  background: #1d4ed8;
+  background: #7f59d5;
 }

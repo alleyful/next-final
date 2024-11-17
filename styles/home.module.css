@@ -1,9 +1,0 @@
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: stretch;
-  min-height: 100svh;
-  flex-direction: row;
-  gap: 20px;
-}
