@@ -53,12 +53,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #2563eb;
+  background: #9f69f5;
   transition: width 0.3s ease;
 }
 
 .links a.active {
-  color: #2563eb;
+  color: #9f69f5;
 }
 
 .links a:hover::after,

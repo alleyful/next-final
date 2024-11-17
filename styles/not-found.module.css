@@ -1,0 +1,35 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  gap: 40px;
+}
+
+.notFound h1 {
+  font-size: 100px;
+  font-weight: bold;
+  color: #efefef;
+  margin: 0;
+}
+
+.notFound p {
+  color: #eee;
+  font-size: 18px;
+}
+
+.homeButton {
+  display: inline-block;
+  padding: 12px 16px;
+  background-color: #724cdf;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.homeButton:hover {
+  background-color: #4b2f9b;
+}

@@ -37,12 +37,13 @@
 
 .author {
   color: #666;
-  margin-bottom: 1rem;
+  margin: 4px 0 16px;
 }
 
 .description {
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  color: #ccc;
+  margin-bottom: 20px;
 }
 
 .metadata {
@@ -73,7 +74,7 @@
 .buyButton {
   display: flex;
   padding: 8px 12px 8px 16px;
-  background-color: #2563eb;
+  background-color: #724cdf;
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -95,5 +96,5 @@
 }
 
 .buyButton:hover {
-  background-color: #0051a2;
+  background-color: #4b2f9b;
 }

@@ -28,7 +28,7 @@
   content: '→';
   position: absolute;
   left: 0;
-  color: #2563eb;
+  color: #9f69f5;
 }
 
 .techGrid {
@@ -52,7 +52,7 @@
 
 .techItem h3 {
   margin: 0 0 0.5rem 0;
-  color: #427bf8;
+  color: #9f69f5;
 }
 
 .techItem p {
